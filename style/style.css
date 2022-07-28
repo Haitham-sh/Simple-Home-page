@@ -1,0 +1,171 @@
+* {
+  margin: 0%;
+}
+
+body {
+  background-color: #eff1f3;
+  font-family: "Poppins", sans-serif;
+}
+
+#container {
+  width: 85%;
+  margin: 0px auto;
+}
+
+.parent {
+  height: 90vh;
+  padding: 2.5%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.items {
+  background-color: #fffdfe;
+  border-radius: 20px;
+  position: relative;
+}
+
+.content {
+  padding: 20px;
+}
+
+.Influencer {
+  text-align: end;
+}
+
+.div1 {
+  padding-bottom: 20px;
+}
+
+#pic1 {
+  position: absolute;
+  z-index: 1;
+}
+
+#pic2 {
+  position: absolute;
+}
+
+.title-h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title-p {
+  color: #737373;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.button-a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 20px;
+  background-color: #ff6c00;
+  margin: 10px 0px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.button-a:hover {
+  background-color: #233253;
+}
+
+/* tablet & mobile */
+@media screen and (max-width: 991px) {
+  .items {
+    margin: 10px 0px;
+  }
+
+  .parent {
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .div1 {
+    order: 3;
+  }
+  .div2 {
+    order: 2;
+  }
+  .div3 {
+    order: 1;
+  }
+
+  #pic1 {
+    width: 55%;
+    height: 110%;
+    left: -5%;
+    top: -10%;
+  }
+
+  #pic2 {
+    width: 45%;
+    height: 95%;
+    right: -5%;
+    top: 5%;
+  }
+
+  .title-h2 {
+    font-size: 8vw;
+  }
+
+  .title-p {
+    font-size: 4.5vw;
+  }
+
+  .button-a {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 992px) {
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 35vh;
+  }
+  .div2 {
+    grid-area: 2 / 1 / 4 / 2;
+    height: 51vh;
+  }
+  .div3 {
+    grid-area: 1 / 2 / 4 / 3;
+    padding-top: 40px;
+    height: 84vh;
+  }
+
+  #pic1 {
+    width: 80%;
+    height: 115%;
+    left: -15%;
+    top: -15%;
+  }
+
+  #pic2 {
+    width: 90%;
+    height: 80%;
+    right: -19%;
+    top: 20%;
+  }
+
+  .title-h2 {
+    font-size: 4.5vw;
+  }
+
+  .title-p {
+    font-size: 2vw;
+  }
+
+  .button-a {
+    font-size: 1.75vw;
+  }
+}
